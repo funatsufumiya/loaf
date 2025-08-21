@@ -258,9 +258,9 @@ To build and run on the terminal:
 
 <!-- _Instructions for Visual Studio to be added here. Contributions are welcome._ -->
 
-- 1. remove `ofxSyphon` from addons.make
-- 2. use [funatsufumiya/ofxLua](https://github.com/funatsufumiya/ofxLua/) instead of original one.
-- 3. just build as normal app (using projectGenerator)
+1. remove `ofxSyphon` from addons.make
+2. use [funatsufumiya/ofxLua](https://github.com/funatsufumiya/ofxLua/) instead of original one.
+3. just build as normal app (using projectGenerator)
 
 (confirmed working on oF v0.12.0 at 2025/08/21)
 
