@@ -30,7 +30,9 @@
 #include <atomic>
 #include <functional>
 #include <sys/stat.h>
-#include <unistd.h>
+
+#include "ofMain.h"
+//#include <unistd.h>
 
 /// \class PathWatcher
 /// \brief watch file and directory paths for modifications
@@ -196,7 +198,8 @@ class PathWatcher {
 	
 		/// does a path exist?
 		static bool pathExists(const std::string & path) {
-			return access(path.c_str(), F_OK) == 0;
+			//return access(path.c_str(), F_OK) == 0;
+			return ofFile::doesFileExist(path, false);
 		}
 
 	/// \section Watching for Changes
